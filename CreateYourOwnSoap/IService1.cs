@@ -19,6 +19,9 @@ namespace CreateYourOwnSoap
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
+      
+
+
         // TODO: Add your service operations here
     }
 
@@ -43,5 +46,13 @@ namespace CreateYourOwnSoap
             get { return stringValue; }
             set { stringValue = value; }
         }
+    }
+
+    public class Student
+    {
+        public string Name { get; set; }
+        public int  Phone { get; set; }
+        public string Address { get; set; }
+        
     }
 }
