@@ -29,5 +29,35 @@ namespace CreateYourOwnSoap
             }
             return composite;
         }
+
+        //public void AddStudent(Student st)
+        //{
+        //    Student student = new Student();
+        //    studentlist.Add(student);
+        //}
+
+        public Student FindStudent(Student name)
+        {
+            throw new NotImplementedException();
+        }
+
+
+        public static List<Student> studentlist = new List<Student>();
+        public void AddStudent(string name, int phone, string address)
+        {
+            Student student = new Student();
+            student.Name = name;
+            student.Address = address;
+            student.Phone = phone;
+            studentlist.Add(student);
+
+        }
+
+      
+
+        public void RemoveStudent(Student rs)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

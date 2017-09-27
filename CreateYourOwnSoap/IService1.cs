@@ -19,7 +19,11 @@ namespace CreateYourOwnSoap
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
-      
+        void AddStudent(string name, int phone, string address);
+        Student FindStudent(Student name);
+        void RemoveStudent(Student rs);
+
+
 
 
         // TODO: Add your service operations here
